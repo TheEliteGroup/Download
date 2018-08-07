@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="signin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="signinResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="signinResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="signup">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gender" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="signupResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="signupResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="adduser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user_type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="raspberry_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="adduserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="adduserResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="update_farm_status">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="temp" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="moisture" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="raspberry_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="update_farm_statusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="update_farm_statusResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="signinSoapIn">
+    <wsdl:part name="parameters" element="tns:signin" />
+  </wsdl:message>
+  <wsdl:message name="signinSoapOut">
+    <wsdl:part name="parameters" element="tns:signinResponse" />
+  </wsdl:message>
+  <wsdl:message name="signupSoapIn">
+    <wsdl:part name="parameters" element="tns:signup" />
+  </wsdl:message>
+  <wsdl:message name="signupSoapOut">
+    <wsdl:part name="parameters" element="tns:signupResponse" />
+  </wsdl:message>
+  <wsdl:message name="adduserSoapIn">
+    <wsdl:part name="parameters" element="tns:adduser" />
+  </wsdl:message>
+  <wsdl:message name="adduserSoapOut">
+    <wsdl:part name="parameters" element="tns:adduserResponse" />
+  </wsdl:message>
+  <wsdl:message name="update_farm_statusSoapIn">
+    <wsdl:part name="parameters" element="tns:update_farm_status" />
+  </wsdl:message>
+  <wsdl:message name="update_farm_statusSoapOut">
+    <wsdl:part name="parameters" element="tns:update_farm_statusResponse" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AISCMSoap">
+    <wsdl:operation name="signin">
+      <wsdl:input message="tns:signinSoapIn" />
+      <wsdl:output message="tns:signinSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="signup">
+      <wsdl:input message="tns:signupSoapIn" />
+      <wsdl:output message="tns:signupSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="adduser">
+      <wsdl:input message="tns:adduserSoapIn" />
+      <wsdl:output message="tns:adduserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="update_farm_status">
+      <wsdl:input message="tns:update_farm_statusSoapIn" />
+      <wsdl:output message="tns:update_farm_statusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AISCMSoap" type="tns:AISCMSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="signin">
+      <soap:operation soapAction="http://tempuri.org/signin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="signup">
+      <soap:operation soapAction="http://tempuri.org/signup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="adduser">
+      <soap:operation soapAction="http://tempuri.org/adduser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update_farm_status">
+      <soap:operation soapAction="http://tempuri.org/update_farm_status" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AISCMSoap12" type="tns:AISCMSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="signin">
+      <soap12:operation soapAction="http://tempuri.org/signin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="signup">
+      <soap12:operation soapAction="http://tempuri.org/signup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="adduser">
+      <soap12:operation soapAction="http://tempuri.org/adduser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update_farm_status">
+      <soap12:operation soapAction="http://tempuri.org/update_farm_status" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AISCM">
+    <wsdl:port name="AISCMSoap" binding="tns:AISCMSoap">
+      <soap:address location="http://agc2017.azurewebsites.net/AISCM.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AISCMSoap12" binding="tns:AISCMSoap12">
+      <soap12:address location="http://agc2017.azurewebsites.net/AISCM.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Water Tank Status"
+             x:Class="AISCM.display_water_related_data">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="water_pump_status" />
+            <Label x:Name="water_tank_level"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

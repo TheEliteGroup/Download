@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AISCM.homepage"
+             xmlns:local="clr-namespace:AISCM">
+    <ContentPage.Content>
+        <Grid BackgroundColor="DarkBlue">
+
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Clicked="OnMonitorStatusClicked"  BackgroundColor="Coral" Text="{local:Translate MonitorStatusOfFarm}" Grid.Row="0" Grid.Column="0" />
+            <Button BackgroundColor="Coral" Text="{local:Translate SelectCrop}" Grid.Row="0" Grid.Column="1" />
+            <Button Clicked="OnWaterStatusClicked" BackgroundColor="Coral" Text="Water pump status" Grid.Row="1" Grid.Column="1"/>
+            <Button BackgroundColor="Coral" Text="{local:Translate CropMarketing}" Grid.Row="1" Grid.Column="0" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

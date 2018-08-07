@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Change Language"
+             x:Class="AISCM.set_language">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Clicked="change_language_english" BackgroundColor="White" x:Name="english" Text="English"></Button>
+            <Button Clicked="change_language_hindi" BackgroundColor="White" x:Name="hindi" Text="Hindi"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

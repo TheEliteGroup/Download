@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Crop Marketing"
+             x:Class="AISCM.CropMarketFarmerView">
+    <ContentPage.Content>
+        <Grid BackgroundColor="#EEEEEE" Padding="20">
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="70*"/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Button Clicked="OnSetNewBidsClicked" BackgroundColor="White" Text="Set New Bids" Grid.Row="0" Grid.Column="0" />
+            <Button Clicked="OnAcceptedBidsClicked" BackgroundColor="White" Text="View All Bids" Grid.Row="1" Grid.Column="0" />
+            <Button Clicked="OnMarketsClicked" BackgroundColor="White" Text="Nearby Markets" Grid.Row="2" Grid.Column="0" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

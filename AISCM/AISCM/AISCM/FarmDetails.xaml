@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Update Details"
+             x:Class="AISCM.FarmDetails">
+
+
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Text="Water Tank Height" Grid.Column="0" Grid.Row="0"/>
+                <Entry Placeholder="In Feets" Keyboard="Numeric" Grid.Column="1" Grid.Row="0" Completed="Entry_Completed" />
+                <Label Text="Region" Grid.Column="0" Grid.Row="1"/>
+                <Picker x:Name="picker" Title="Select your district" Grid.Column="1" Grid.Row="1" SelectedIndexChanged="OnPickerSelectedIndexChanged">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Amravati</x:String>
+                            <x:String>Aurangabad</x:String>
+                            <x:String>Kokan</x:String>
+                            <x:String>Vidarbha</x:String>
+                            <x:String>Nashik</x:String>
+                            <x:String>Pune</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Label Text="pH value of farm:" Grid.Column="0" Grid.Row="2"/>
+                <Slider x:Name="SDemo"  Maximum=" 14 " Minimum=" 5 " VerticalOptions="Center" Grid.Column="1" Grid.Row="2" ValueChanged="OnSliderValChanged"/>
+
+            </Grid>
+            <Label x:Name="lbldisp"></Label>
+            <Label x:Name="phSel"></Label>
+        </StackLayout>
+
+
+    </ContentPage.Content>
+
+
+</ContentPage>

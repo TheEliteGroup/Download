@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Nearby Markets"
+             x:Class="AISCM.MarketInputView">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+
+            <!-- <Picker x:Name="cont" ItemDisplayBinding="{Binding Value}" SelectedIndexChanged="OnCropChoosen"/> -->
+            <Label Text="Select Crop To Be Marketed" FontAttributes="Bold" FontSize="20"/>
+            <Picker Title="Select Crop" x:Name="cropPicker" ItemDisplayBinding="{Binding Value}" SelectedIndexChanged="OnCropChoosen"/>
+
+            <Label Text="Enter Approximate Quantity in Quintals" FontAttributes="Bold" FontSize="20"/>
+            <Entry x:Name="quantity" Placeholder="Enter Approximate Quantity"/>
+
+            <Button Text="Find" x:Name="bid" Clicked="addProdMarket" HorizontalOptions="Center" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

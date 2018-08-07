@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AISCM.MasterDetailPage1Detail"
+             Title="Krishi Vikas"
+             xmlns:local="clr-namespace:AISCM">
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
+            <Grid BackgroundColor="#EEEEEE" Padding="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="10*"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="Crop3.jpg" WidthRequest="60" Grid.Row="0" Grid.Column="0"></Image>
+                <Button Clicked="OnMonitorStatusClicked" BackgroundColor="White" Text="{local:Translate MonitorStatusOfFarm}" Grid.Row="1" Grid.Column="0" />
+                <Button Clicked="OnSelectCropClicked" BackgroundColor="White" Text="{local:Translate SelectCrop}" Grid.Row="2" Grid.Column="0" />
+                <Button Clicked="OnViewCropClicked" BackgroundColor="White" Text="{local:Translate ViewSelectedCrops}" Grid.Row="3" Grid.Column="0" />
+                <Button Clicked="OnCropMarketClicked" BackgroundColor="White" Text="{local:Translate CropMarketing}" Grid.Row="4" Grid.Column="0" />
+                
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

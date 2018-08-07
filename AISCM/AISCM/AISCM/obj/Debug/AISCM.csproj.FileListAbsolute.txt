@@ -1,0 +1,184 @@
+F:\vs17 apps\AISCM\AISCM\AISCM\bin\Debug\AISCM.dll
+F:\vs17 apps\AISCM\AISCM\AISCM\bin\Debug\AISCM.pdb
+F:\vs17 apps\AISCM\AISCM\AISCM\bin\Debug\hi\AISCM.resources.dll
+F:\vs17 apps\AISCM\AISCM\AISCM\bin\Debug\Syncfusion.Core.XForms.dll
+F:\vs17 apps\AISCM\AISCM\AISCM\bin\Debug\Syncfusion.SfChart.XForms.dll
+F:\vs17 apps\AISCM\AISCM\AISCM\bin\Debug\System.Web.dll
+F:\vs17 apps\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Core.dll
+F:\vs17 apps\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Platform.dll
+F:\vs17 apps\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Xaml.dll
+F:\vs17 apps\AISCM\AISCM\AISCM\bin\Debug\Syncfusion.Core.XForms.xml
+F:\vs17 apps\AISCM\AISCM\AISCM\bin\Debug\Syncfusion.SfChart.XForms.xml
+F:\vs17 apps\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Core.pdb
+F:\vs17 apps\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Core.xml
+F:\vs17 apps\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Platform.pdb
+F:\vs17 apps\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Xaml.pdb
+F:\vs17 apps\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Xaml.xml
+F:\vs17 apps\AISCM\AISCM\AISCM\obj\Debug\AISCM.Resources.AppResource.resources
+F:\vs17 apps\AISCM\AISCM\AISCM\obj\Debug\AISCM.Resources.AppResource.hi.resources
+F:\vs17 apps\AISCM\AISCM\AISCM\obj\Debug\AISCM.csproj.GenerateResource.Cache
+F:\vs17 apps\AISCM\AISCM\AISCM\obj\Debug\AISCM.MainPage.xaml.g.cs
+F:\vs17 apps\AISCM\AISCM\AISCM\obj\Debug\AISCM.App.xaml.g.cs
+F:\vs17 apps\AISCM\AISCM\AISCM\obj\Debug\AISCM.monitorstatus.xaml.g.cs
+F:\vs17 apps\AISCM\AISCM\AISCM\obj\Debug\AISCM.homepage.xaml.g.cs
+F:\vs17 apps\AISCM\AISCM\AISCM\obj\Debug\hi\AISCM.resources.dll
+F:\vs17 apps\AISCM\AISCM\AISCM\obj\Debug\AISCM.dll
+F:\vs17 apps\AISCM\AISCM\AISCM\obj\Debug\AISCM.pdb
+F:\AISCM\AISCM\AISCM\bin\Debug\AISCM.dll
+F:\AISCM\AISCM\AISCM\bin\Debug\AISCM.pdb
+F:\AISCM\AISCM\AISCM\bin\Debug\hi\AISCM.resources.dll
+F:\AISCM\AISCM\AISCM\bin\Debug\CarouselView.FormsPlugin.Abstractions.dll
+F:\AISCM\AISCM\AISCM\bin\Debug\OxyPlot.dll
+F:\AISCM\AISCM\AISCM\bin\Debug\OxyPlot.Xamarin.Forms.dll
+F:\AISCM\AISCM\AISCM\bin\Debug\Syncfusion.SfChart.XForms.dll
+F:\AISCM\AISCM\AISCM\bin\Debug\System.Web.dll
+F:\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Core.dll
+F:\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Platform.dll
+F:\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Xaml.dll
+F:\AISCM\AISCM\AISCM\bin\Debug\OxyPlot.pdb
+F:\AISCM\AISCM\AISCM\bin\Debug\OxyPlot.xml
+F:\AISCM\AISCM\AISCM\bin\Debug\OxyPlot.Xamarin.Forms.pdb
+F:\AISCM\AISCM\AISCM\bin\Debug\OxyPlot.Xamarin.Forms.xml
+F:\AISCM\AISCM\AISCM\bin\Debug\Syncfusion.SfChart.XForms.xml
+F:\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Core.pdb
+F:\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Core.xml
+F:\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Platform.pdb
+F:\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Xaml.pdb
+F:\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Xaml.xml
+F:\AISCM\AISCM\AISCM\obj\Debug\AISCM.Resources.AppResource.resources
+F:\AISCM\AISCM\AISCM\obj\Debug\AISCM.Resources.AppResource.hi.resources
+F:\AISCM\AISCM\AISCM\obj\Debug\AISCM.csproj.GenerateResource.Cache
+F:\AISCM\AISCM\AISCM\obj\Debug\AISCM.MainPage.xaml.g.cs
+F:\AISCM\AISCM\AISCM\obj\Debug\AISCM.App.xaml.g.cs
+F:\AISCM\AISCM\AISCM\obj\Debug\AISCM.monitorstatus.xaml.g.cs
+F:\AISCM\AISCM\AISCM\obj\Debug\AISCM.homepage.xaml.g.cs
+F:\AISCM\AISCM\AISCM\obj\Debug\AISCM.display_water_related_data.xaml.g.cs
+F:\AISCM\AISCM\AISCM\obj\Debug\AISCM.CropMarketView.xaml.g.cs
+F:\AISCM\AISCM\AISCM\obj\Debug\AISCM.set_language.xaml.g.cs
+F:\AISCM\AISCM\AISCM\obj\Debug\AISCM.AcceptedBidsFarmerView.xaml.g.cs
+F:\AISCM\AISCM\AISCM\obj\Debug\AISCM.AcceptedBidsView.xaml.g.cs
+F:\AISCM\AISCM\AISCM\obj\Debug\AISCM.BidDetailFarmerView.xaml.g.cs
+F:\AISCM\AISCM\AISCM\obj\Debug\AISCM.GetCropView.xaml.g.cs
+F:\AISCM\AISCM\AISCM\obj\Debug\AISCM.index.xaml.g.cs
+F:\AISCM\AISCM\AISCM\obj\Debug\AISCM.ListBidsView.xaml.g.cs
+F:\AISCM\AISCM\AISCM\obj\Debug\AISCM.MarketInputView.xaml.g.cs
+F:\AISCM\AISCM\AISCM\obj\Debug\AISCM.NavigationItem.xaml.g.cs
+F:\AISCM\AISCM\AISCM\obj\Debug\AISCM.SelectCropView.xaml.g.cs
+F:\AISCM\AISCM\AISCM\obj\Debug\AISCM.SetNewBidsFarmerView.xaml.g.cs
+F:\AISCM\AISCM\AISCM\obj\Debug\AISCM.showDetailMarketsFarmer.xaml.g.cs
+F:\AISCM\AISCM\AISCM\obj\Debug\AISCM.showMarketsFarmer.xaml.g.cs
+F:\AISCM\AISCM\AISCM\obj\Debug\hi\AISCM.resources.dll
+F:\AISCM\AISCM\AISCM\obj\Debug\AISCM.dll
+F:\AISCM\AISCM\AISCM\obj\Debug\AISCM.pdb
+F:\AISCM\AISCM\AISCM\obj\Debug\AISCM.csprojResolveAssemblyReference.cache
+F:\AISCM\AISCM\AISCM\obj\Debug\AISCM.CropMarketFarmerView.xaml.g.cs
+E:\AISCM\AISCM\AISCM\bin\Debug\AISCM.dll
+E:\AISCM\AISCM\AISCM\bin\Debug\AISCM.pdb
+E:\AISCM\AISCM\AISCM\bin\Debug\hi\AISCM.resources.dll
+E:\AISCM\AISCM\AISCM\bin\Debug\CarouselView.FormsPlugin.Abstractions.dll
+E:\AISCM\AISCM\AISCM\bin\Debug\OxyPlot.dll
+E:\AISCM\AISCM\AISCM\bin\Debug\OxyPlot.Xamarin.Forms.dll
+E:\AISCM\AISCM\AISCM\bin\Debug\Syncfusion.SfChart.XForms.dll
+E:\AISCM\AISCM\AISCM\bin\Debug\System.Web.dll
+E:\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Core.dll
+E:\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Platform.dll
+E:\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Xaml.dll
+E:\AISCM\AISCM\AISCM\bin\Debug\OxyPlot.pdb
+E:\AISCM\AISCM\AISCM\bin\Debug\OxyPlot.xml
+E:\AISCM\AISCM\AISCM\bin\Debug\OxyPlot.Xamarin.Forms.pdb
+E:\AISCM\AISCM\AISCM\bin\Debug\OxyPlot.Xamarin.Forms.xml
+E:\AISCM\AISCM\AISCM\bin\Debug\Syncfusion.SfChart.XForms.xml
+E:\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Core.pdb
+E:\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Core.xml
+E:\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Platform.pdb
+E:\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Xaml.pdb
+E:\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Xaml.xml
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.csprojResolveAssemblyReference.cache
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.Resources.AppResource.resources
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.Resources.AppResource.hi.resources
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.csproj.GenerateResource.Cache
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.MainPage.xaml.g.cs
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.App.xaml.g.cs
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.monitorstatus.xaml.g.cs
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.homepage.xaml.g.cs
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.display_water_related_data.xaml.g.cs
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.CropMarketView.xaml.g.cs
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.set_language.xaml.g.cs
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.AcceptedBidsFarmerView.xaml.g.cs
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.AcceptedBidsView.xaml.g.cs
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.BidDetailFarmerView.xaml.g.cs
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.GetCropView.xaml.g.cs
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.index.xaml.g.cs
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.ListBidsView.xaml.g.cs
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.MarketInputView.xaml.g.cs
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.NavigationItem.xaml.g.cs
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.SelectCropView.xaml.g.cs
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.SetNewBidsFarmerView.xaml.g.cs
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.showDetailMarketsFarmer.xaml.g.cs
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.showMarketsFarmer.xaml.g.cs
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.CropMarketFarmerView.xaml.g.cs
+E:\AISCM\AISCM\AISCM\obj\Debug\hi\AISCM.resources.dll
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.dll
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.pdb
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.MasterDetailPage1.xaml.g.cs
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.MasterDetailPage1Master.xaml.g.cs
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.MasterDetailPage1Detail.xaml.g.cs
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.FarmDetails.xaml.g.cs
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.bidFarmerDetails.xaml.g.cs
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.GetApproxQuantityCropPredict.xaml.g.cs
+E:\AISCM\AISCM\AISCM\obj\Debug\AISCM.FarmerDetailMarketView.xaml.g.cs
+G:\AISCM\AISCM\AISCM\bin\Debug\AISCM.dll
+G:\AISCM\AISCM\AISCM\bin\Debug\AISCM.pdb
+G:\AISCM\AISCM\AISCM\bin\Debug\hi\AISCM.resources.dll
+G:\AISCM\AISCM\AISCM\bin\Debug\CarouselView.FormsPlugin.Abstractions.dll
+G:\AISCM\AISCM\AISCM\bin\Debug\OxyPlot.dll
+G:\AISCM\AISCM\AISCM\bin\Debug\OxyPlot.Xamarin.Forms.dll
+G:\AISCM\AISCM\AISCM\bin\Debug\Syncfusion.SfChart.XForms.dll
+G:\AISCM\AISCM\AISCM\bin\Debug\System.Web.dll
+G:\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Core.dll
+G:\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Platform.dll
+G:\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Xaml.dll
+G:\AISCM\AISCM\AISCM\bin\Debug\OxyPlot.pdb
+G:\AISCM\AISCM\AISCM\bin\Debug\OxyPlot.xml
+G:\AISCM\AISCM\AISCM\bin\Debug\OxyPlot.Xamarin.Forms.pdb
+G:\AISCM\AISCM\AISCM\bin\Debug\OxyPlot.Xamarin.Forms.xml
+G:\AISCM\AISCM\AISCM\bin\Debug\Syncfusion.SfChart.XForms.xml
+G:\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Core.pdb
+G:\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Core.xml
+G:\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Platform.pdb
+G:\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Xaml.pdb
+G:\AISCM\AISCM\AISCM\bin\Debug\Xamarin.Forms.Xaml.xml
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.csprojResolveAssemblyReference.cache
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.Resources.AppResource.resources
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.Resources.AppResource.hi.resources
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.csproj.GenerateResource.Cache
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.MainPage.xaml.g.cs
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.App.xaml.g.cs
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.monitorstatus.xaml.g.cs
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.homepage.xaml.g.cs
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.display_water_related_data.xaml.g.cs
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.CropMarketView.xaml.g.cs
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.set_language.xaml.g.cs
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.AcceptedBidsFarmerView.xaml.g.cs
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.AcceptedBidsView.xaml.g.cs
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.BidDetailFarmerView.xaml.g.cs
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.GetCropView.xaml.g.cs
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.index.xaml.g.cs
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.ListBidsView.xaml.g.cs
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.MarketInputView.xaml.g.cs
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.NavigationItem.xaml.g.cs
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.SelectCropView.xaml.g.cs
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.SetNewBidsFarmerView.xaml.g.cs
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.showDetailMarketsFarmer.xaml.g.cs
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.showMarketsFarmer.xaml.g.cs
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.CropMarketFarmerView.xaml.g.cs
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.MasterDetailPage1.xaml.g.cs
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.MasterDetailPage1Master.xaml.g.cs
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.MasterDetailPage1Detail.xaml.g.cs
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.FarmDetails.xaml.g.cs
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.bidFarmerDetails.xaml.g.cs
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.GetApproxQuantityCropPredict.xaml.g.cs
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.FarmerDetailMarketView.xaml.g.cs
+G:\AISCM\AISCM\AISCM\obj\Debug\hi\AISCM.resources.dll
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.dll
+G:\AISCM\AISCM\AISCM\obj\Debug\AISCM.pdb

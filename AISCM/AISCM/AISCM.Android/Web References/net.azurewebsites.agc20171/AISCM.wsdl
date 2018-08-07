@@ -1,0 +1,1326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="get_markets">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cropid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_marketsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="get_marketsResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="sell_to_market">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cropid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="sell_to_marketResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="get_market_details">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="marketid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cropid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_market_detailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="get_market_detailsResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getlatlng">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="address" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getlatlngResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getlatlngResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="signin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="signinResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="signinResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="update_gcm_token">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="update_gcm_tokenResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="add_token">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="add_tokenResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="signup">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gender" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ut" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="signupResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="signupResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="add_farmer_details">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cnum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ph" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="region" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="wth" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="raspberry_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="add_farmer_detailsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="add_manufacturing_company_details">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cnum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="region" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="add_manufacturing_company_detailsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="update_farm_ph">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ph" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="update_farm_phResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="update_farm_phResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="adduser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user_type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="raspberry_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="adduserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="adduserResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSoilId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="p" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="disid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSoilIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSoilIdResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="predict_crops">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="predict_cropsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="predict_cropsResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_water_status">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_water_statusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="get_water_statusResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_current_farm_status">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_current_farm_statusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="get_current_farm_statusResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_current_crops">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_current_cropsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="get_current_cropsResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="add_appx_production">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cropid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="appx_prod" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="add_appx_productionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="add_new_crop_farmer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cropid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="app_prod" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="add_new_crop_farmerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="add_new_crop_farmerResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_current_bids">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_current_bidsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="get_current_bidsResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_bids">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_bidsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="get_bidsResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accept_bid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bidid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accept_bidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="accept_bidResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_bid_details_mucp">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bidid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_bid_details_mucpResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="get_bid_details_mucpResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_bid_details">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bidid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_bid_detailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="get_bid_detailsResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_bids_farmer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_bids_farmerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="get_bids_farmerResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="set_new_bid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cropid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="appx_prod" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rate_per_qtl" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="set_new_bidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="set_new_bidResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="update_farm_status">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="temp" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mois" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="raspberry_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="water_tank_level" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="water_pump_status" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="update_farm_statusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="update_farm_statusResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="send_notificaton_generalized">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="send_notificaton_generalizedResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="send_notification">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="st" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="send_notificationResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getdatetime">
+        <s:complexType />
+      </s:element>
+      <s:element name="getdatetimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getdatetimeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="get_marketsSoapIn">
+    <wsdl:part name="parameters" element="tns:get_markets" />
+  </wsdl:message>
+  <wsdl:message name="get_marketsSoapOut">
+    <wsdl:part name="parameters" element="tns:get_marketsResponse" />
+  </wsdl:message>
+  <wsdl:message name="sell_to_marketSoapIn">
+    <wsdl:part name="parameters" element="tns:sell_to_market" />
+  </wsdl:message>
+  <wsdl:message name="sell_to_marketSoapOut">
+    <wsdl:part name="parameters" element="tns:sell_to_marketResponse" />
+  </wsdl:message>
+  <wsdl:message name="get_market_detailsSoapIn">
+    <wsdl:part name="parameters" element="tns:get_market_details" />
+  </wsdl:message>
+  <wsdl:message name="get_market_detailsSoapOut">
+    <wsdl:part name="parameters" element="tns:get_market_detailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getlatlngSoapIn">
+    <wsdl:part name="parameters" element="tns:getlatlng" />
+  </wsdl:message>
+  <wsdl:message name="getlatlngSoapOut">
+    <wsdl:part name="parameters" element="tns:getlatlngResponse" />
+  </wsdl:message>
+  <wsdl:message name="signinSoapIn">
+    <wsdl:part name="parameters" element="tns:signin" />
+  </wsdl:message>
+  <wsdl:message name="signinSoapOut">
+    <wsdl:part name="parameters" element="tns:signinResponse" />
+  </wsdl:message>
+  <wsdl:message name="update_gcm_tokenSoapIn">
+    <wsdl:part name="parameters" element="tns:update_gcm_token" />
+  </wsdl:message>
+  <wsdl:message name="update_gcm_tokenSoapOut">
+    <wsdl:part name="parameters" element="tns:update_gcm_tokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="add_tokenSoapIn">
+    <wsdl:part name="parameters" element="tns:add_token" />
+  </wsdl:message>
+  <wsdl:message name="add_tokenSoapOut">
+    <wsdl:part name="parameters" element="tns:add_tokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="signupSoapIn">
+    <wsdl:part name="parameters" element="tns:signup" />
+  </wsdl:message>
+  <wsdl:message name="signupSoapOut">
+    <wsdl:part name="parameters" element="tns:signupResponse" />
+  </wsdl:message>
+  <wsdl:message name="add_farmer_detailsSoapIn">
+    <wsdl:part name="parameters" element="tns:add_farmer_details" />
+  </wsdl:message>
+  <wsdl:message name="add_farmer_detailsSoapOut">
+    <wsdl:part name="parameters" element="tns:add_farmer_detailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="add_manufacturing_company_detailsSoapIn">
+    <wsdl:part name="parameters" element="tns:add_manufacturing_company_details" />
+  </wsdl:message>
+  <wsdl:message name="add_manufacturing_company_detailsSoapOut">
+    <wsdl:part name="parameters" element="tns:add_manufacturing_company_detailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="update_farm_phSoapIn">
+    <wsdl:part name="parameters" element="tns:update_farm_ph" />
+  </wsdl:message>
+  <wsdl:message name="update_farm_phSoapOut">
+    <wsdl:part name="parameters" element="tns:update_farm_phResponse" />
+  </wsdl:message>
+  <wsdl:message name="adduserSoapIn">
+    <wsdl:part name="parameters" element="tns:adduser" />
+  </wsdl:message>
+  <wsdl:message name="adduserSoapOut">
+    <wsdl:part name="parameters" element="tns:adduserResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSoilIdSoapIn">
+    <wsdl:part name="parameters" element="tns:getSoilId" />
+  </wsdl:message>
+  <wsdl:message name="getSoilIdSoapOut">
+    <wsdl:part name="parameters" element="tns:getSoilIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="predict_cropsSoapIn">
+    <wsdl:part name="parameters" element="tns:predict_crops" />
+  </wsdl:message>
+  <wsdl:message name="predict_cropsSoapOut">
+    <wsdl:part name="parameters" element="tns:predict_cropsResponse" />
+  </wsdl:message>
+  <wsdl:message name="get_water_statusSoapIn">
+    <wsdl:part name="parameters" element="tns:get_water_status" />
+  </wsdl:message>
+  <wsdl:message name="get_water_statusSoapOut">
+    <wsdl:part name="parameters" element="tns:get_water_statusResponse" />
+  </wsdl:message>
+  <wsdl:message name="get_current_farm_statusSoapIn">
+    <wsdl:part name="parameters" element="tns:get_current_farm_status" />
+  </wsdl:message>
+  <wsdl:message name="get_current_farm_statusSoapOut">
+    <wsdl:part name="parameters" element="tns:get_current_farm_statusResponse" />
+  </wsdl:message>
+  <wsdl:message name="get_current_cropsSoapIn">
+    <wsdl:part name="parameters" element="tns:get_current_crops" />
+  </wsdl:message>
+  <wsdl:message name="get_current_cropsSoapOut">
+    <wsdl:part name="parameters" element="tns:get_current_cropsResponse" />
+  </wsdl:message>
+  <wsdl:message name="add_appx_productionSoapIn">
+    <wsdl:part name="parameters" element="tns:add_appx_production" />
+  </wsdl:message>
+  <wsdl:message name="add_appx_productionSoapOut">
+    <wsdl:part name="parameters" element="tns:add_appx_productionResponse" />
+  </wsdl:message>
+  <wsdl:message name="add_new_crop_farmerSoapIn">
+    <wsdl:part name="parameters" element="tns:add_new_crop_farmer" />
+  </wsdl:message>
+  <wsdl:message name="add_new_crop_farmerSoapOut">
+    <wsdl:part name="parameters" element="tns:add_new_crop_farmerResponse" />
+  </wsdl:message>
+  <wsdl:message name="get_current_bidsSoapIn">
+    <wsdl:part name="parameters" element="tns:get_current_bids" />
+  </wsdl:message>
+  <wsdl:message name="get_current_bidsSoapOut">
+    <wsdl:part name="parameters" element="tns:get_current_bidsResponse" />
+  </wsdl:message>
+  <wsdl:message name="get_bidsSoapIn">
+    <wsdl:part name="parameters" element="tns:get_bids" />
+  </wsdl:message>
+  <wsdl:message name="get_bidsSoapOut">
+    <wsdl:part name="parameters" element="tns:get_bidsResponse" />
+  </wsdl:message>
+  <wsdl:message name="accept_bidSoapIn">
+    <wsdl:part name="parameters" element="tns:accept_bid" />
+  </wsdl:message>
+  <wsdl:message name="accept_bidSoapOut">
+    <wsdl:part name="parameters" element="tns:accept_bidResponse" />
+  </wsdl:message>
+  <wsdl:message name="get_bid_details_mucpSoapIn">
+    <wsdl:part name="parameters" element="tns:get_bid_details_mucp" />
+  </wsdl:message>
+  <wsdl:message name="get_bid_details_mucpSoapOut">
+    <wsdl:part name="parameters" element="tns:get_bid_details_mucpResponse" />
+  </wsdl:message>
+  <wsdl:message name="get_bid_detailsSoapIn">
+    <wsdl:part name="parameters" element="tns:get_bid_details" />
+  </wsdl:message>
+  <wsdl:message name="get_bid_detailsSoapOut">
+    <wsdl:part name="parameters" element="tns:get_bid_detailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="get_bids_farmerSoapIn">
+    <wsdl:part name="parameters" element="tns:get_bids_farmer" />
+  </wsdl:message>
+  <wsdl:message name="get_bids_farmerSoapOut">
+    <wsdl:part name="parameters" element="tns:get_bids_farmerResponse" />
+  </wsdl:message>
+  <wsdl:message name="set_new_bidSoapIn">
+    <wsdl:part name="parameters" element="tns:set_new_bid" />
+  </wsdl:message>
+  <wsdl:message name="set_new_bidSoapOut">
+    <wsdl:part name="parameters" element="tns:set_new_bidResponse" />
+  </wsdl:message>
+  <wsdl:message name="update_farm_statusSoapIn">
+    <wsdl:part name="parameters" element="tns:update_farm_status" />
+  </wsdl:message>
+  <wsdl:message name="update_farm_statusSoapOut">
+    <wsdl:part name="parameters" element="tns:update_farm_statusResponse" />
+  </wsdl:message>
+  <wsdl:message name="send_notificaton_generalizedSoapIn">
+    <wsdl:part name="parameters" element="tns:send_notificaton_generalized" />
+  </wsdl:message>
+  <wsdl:message name="send_notificaton_generalizedSoapOut">
+    <wsdl:part name="parameters" element="tns:send_notificaton_generalizedResponse" />
+  </wsdl:message>
+  <wsdl:message name="send_notificationSoapIn">
+    <wsdl:part name="parameters" element="tns:send_notification" />
+  </wsdl:message>
+  <wsdl:message name="send_notificationSoapOut">
+    <wsdl:part name="parameters" element="tns:send_notificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="getdatetimeSoapIn">
+    <wsdl:part name="parameters" element="tns:getdatetime" />
+  </wsdl:message>
+  <wsdl:message name="getdatetimeSoapOut">
+    <wsdl:part name="parameters" element="tns:getdatetimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AISCMSoap">
+    <wsdl:operation name="get_markets">
+      <wsdl:input message="tns:get_marketsSoapIn" />
+      <wsdl:output message="tns:get_marketsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sell_to_market">
+      <wsdl:input message="tns:sell_to_marketSoapIn" />
+      <wsdl:output message="tns:sell_to_marketSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="get_market_details">
+      <wsdl:input message="tns:get_market_detailsSoapIn" />
+      <wsdl:output message="tns:get_market_detailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getlatlng">
+      <wsdl:input message="tns:getlatlngSoapIn" />
+      <wsdl:output message="tns:getlatlngSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="signin">
+      <wsdl:input message="tns:signinSoapIn" />
+      <wsdl:output message="tns:signinSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="update_gcm_token">
+      <wsdl:input message="tns:update_gcm_tokenSoapIn" />
+      <wsdl:output message="tns:update_gcm_tokenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="add_token">
+      <wsdl:input message="tns:add_tokenSoapIn" />
+      <wsdl:output message="tns:add_tokenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="signup">
+      <wsdl:input message="tns:signupSoapIn" />
+      <wsdl:output message="tns:signupSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="add_farmer_details">
+      <wsdl:input message="tns:add_farmer_detailsSoapIn" />
+      <wsdl:output message="tns:add_farmer_detailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="add_manufacturing_company_details">
+      <wsdl:input message="tns:add_manufacturing_company_detailsSoapIn" />
+      <wsdl:output message="tns:add_manufacturing_company_detailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="update_farm_ph">
+      <wsdl:input message="tns:update_farm_phSoapIn" />
+      <wsdl:output message="tns:update_farm_phSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="adduser">
+      <wsdl:input message="tns:adduserSoapIn" />
+      <wsdl:output message="tns:adduserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSoilId">
+      <wsdl:input message="tns:getSoilIdSoapIn" />
+      <wsdl:output message="tns:getSoilIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="predict_crops">
+      <wsdl:input message="tns:predict_cropsSoapIn" />
+      <wsdl:output message="tns:predict_cropsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="get_water_status">
+      <wsdl:input message="tns:get_water_statusSoapIn" />
+      <wsdl:output message="tns:get_water_statusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="get_current_farm_status">
+      <wsdl:input message="tns:get_current_farm_statusSoapIn" />
+      <wsdl:output message="tns:get_current_farm_statusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="get_current_crops">
+      <wsdl:input message="tns:get_current_cropsSoapIn" />
+      <wsdl:output message="tns:get_current_cropsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="add_appx_production">
+      <wsdl:input message="tns:add_appx_productionSoapIn" />
+      <wsdl:output message="tns:add_appx_productionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="add_new_crop_farmer">
+      <wsdl:input message="tns:add_new_crop_farmerSoapIn" />
+      <wsdl:output message="tns:add_new_crop_farmerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="get_current_bids">
+      <wsdl:input message="tns:get_current_bidsSoapIn" />
+      <wsdl:output message="tns:get_current_bidsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="get_bids">
+      <wsdl:input message="tns:get_bidsSoapIn" />
+      <wsdl:output message="tns:get_bidsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="accept_bid">
+      <wsdl:input message="tns:accept_bidSoapIn" />
+      <wsdl:output message="tns:accept_bidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="get_bid_details_mucp">
+      <wsdl:input message="tns:get_bid_details_mucpSoapIn" />
+      <wsdl:output message="tns:get_bid_details_mucpSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="get_bid_details">
+      <wsdl:input message="tns:get_bid_detailsSoapIn" />
+      <wsdl:output message="tns:get_bid_detailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="get_bids_farmer">
+      <wsdl:input message="tns:get_bids_farmerSoapIn" />
+      <wsdl:output message="tns:get_bids_farmerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="set_new_bid">
+      <wsdl:input message="tns:set_new_bidSoapIn" />
+      <wsdl:output message="tns:set_new_bidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="update_farm_status">
+      <wsdl:input message="tns:update_farm_statusSoapIn" />
+      <wsdl:output message="tns:update_farm_statusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="send_notificaton_generalized">
+      <wsdl:input message="tns:send_notificaton_generalizedSoapIn" />
+      <wsdl:output message="tns:send_notificaton_generalizedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="send_notification">
+      <wsdl:input message="tns:send_notificationSoapIn" />
+      <wsdl:output message="tns:send_notificationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getdatetime">
+      <wsdl:input message="tns:getdatetimeSoapIn" />
+      <wsdl:output message="tns:getdatetimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AISCMSoap" type="tns:AISCMSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="get_markets">
+      <soap:operation soapAction="http://tempuri.org/get_markets" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sell_to_market">
+      <soap:operation soapAction="http://tempuri.org/sell_to_market" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_market_details">
+      <soap:operation soapAction="http://tempuri.org/get_market_details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getlatlng">
+      <soap:operation soapAction="http://tempuri.org/getlatlng" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="signin">
+      <soap:operation soapAction="http://tempuri.org/signin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update_gcm_token">
+      <soap:operation soapAction="http://tempuri.org/update_gcm_token" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="add_token">
+      <soap:operation soapAction="http://tempuri.org/add_token" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="signup">
+      <soap:operation soapAction="http://tempuri.org/signup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="add_farmer_details">
+      <soap:operation soapAction="http://tempuri.org/add_farmer_details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="add_manufacturing_company_details">
+      <soap:operation soapAction="http://tempuri.org/add_manufacturing_company_details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update_farm_ph">
+      <soap:operation soapAction="http://tempuri.org/update_farm_ph" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="adduser">
+      <soap:operation soapAction="http://tempuri.org/adduser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSoilId">
+      <soap:operation soapAction="http://tempuri.org/getSoilId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="predict_crops">
+      <soap:operation soapAction="http://tempuri.org/predict_crops" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_water_status">
+      <soap:operation soapAction="http://tempuri.org/get_water_status" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_current_farm_status">
+      <soap:operation soapAction="http://tempuri.org/get_current_farm_status" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_current_crops">
+      <soap:operation soapAction="http://tempuri.org/get_current_crops" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="add_appx_production">
+      <soap:operation soapAction="http://tempuri.org/add_appx_production" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="add_new_crop_farmer">
+      <soap:operation soapAction="http://tempuri.org/add_new_crop_farmer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_current_bids">
+      <soap:operation soapAction="http://tempuri.org/get_current_bids" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_bids">
+      <soap:operation soapAction="http://tempuri.org/get_bids" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accept_bid">
+      <soap:operation soapAction="http://tempuri.org/accept_bid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_bid_details_mucp">
+      <soap:operation soapAction="http://tempuri.org/get_bid_details_mucp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_bid_details">
+      <soap:operation soapAction="http://tempuri.org/get_bid_details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_bids_farmer">
+      <soap:operation soapAction="http://tempuri.org/get_bids_farmer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_new_bid">
+      <soap:operation soapAction="http://tempuri.org/set_new_bid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update_farm_status">
+      <soap:operation soapAction="http://tempuri.org/update_farm_status" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="send_notificaton_generalized">
+      <soap:operation soapAction="http://tempuri.org/send_notificaton_generalized" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="send_notification">
+      <soap:operation soapAction="http://tempuri.org/send_notification" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getdatetime">
+      <soap:operation soapAction="http://tempuri.org/getdatetime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AISCMSoap12" type="tns:AISCMSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="get_markets">
+      <soap12:operation soapAction="http://tempuri.org/get_markets" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sell_to_market">
+      <soap12:operation soapAction="http://tempuri.org/sell_to_market" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_market_details">
+      <soap12:operation soapAction="http://tempuri.org/get_market_details" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getlatlng">
+      <soap12:operation soapAction="http://tempuri.org/getlatlng" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="signin">
+      <soap12:operation soapAction="http://tempuri.org/signin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update_gcm_token">
+      <soap12:operation soapAction="http://tempuri.org/update_gcm_token" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="add_token">
+      <soap12:operation soapAction="http://tempuri.org/add_token" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="signup">
+      <soap12:operation soapAction="http://tempuri.org/signup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="add_farmer_details">
+      <soap12:operation soapAction="http://tempuri.org/add_farmer_details" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="add_manufacturing_company_details">
+      <soap12:operation soapAction="http://tempuri.org/add_manufacturing_company_details" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update_farm_ph">
+      <soap12:operation soapAction="http://tempuri.org/update_farm_ph" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="adduser">
+      <soap12:operation soapAction="http://tempuri.org/adduser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSoilId">
+      <soap12:operation soapAction="http://tempuri.org/getSoilId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="predict_crops">
+      <soap12:operation soapAction="http://tempuri.org/predict_crops" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_water_status">
+      <soap12:operation soapAction="http://tempuri.org/get_water_status" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_current_farm_status">
+      <soap12:operation soapAction="http://tempuri.org/get_current_farm_status" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_current_crops">
+      <soap12:operation soapAction="http://tempuri.org/get_current_crops" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="add_appx_production">
+      <soap12:operation soapAction="http://tempuri.org/add_appx_production" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="add_new_crop_farmer">
+      <soap12:operation soapAction="http://tempuri.org/add_new_crop_farmer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_current_bids">
+      <soap12:operation soapAction="http://tempuri.org/get_current_bids" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_bids">
+      <soap12:operation soapAction="http://tempuri.org/get_bids" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accept_bid">
+      <soap12:operation soapAction="http://tempuri.org/accept_bid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_bid_details_mucp">
+      <soap12:operation soapAction="http://tempuri.org/get_bid_details_mucp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_bid_details">
+      <soap12:operation soapAction="http://tempuri.org/get_bid_details" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_bids_farmer">
+      <soap12:operation soapAction="http://tempuri.org/get_bids_farmer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_new_bid">
+      <soap12:operation soapAction="http://tempuri.org/set_new_bid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update_farm_status">
+      <soap12:operation soapAction="http://tempuri.org/update_farm_status" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="send_notificaton_generalized">
+      <soap12:operation soapAction="http://tempuri.org/send_notificaton_generalized" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="send_notification">
+      <soap12:operation soapAction="http://tempuri.org/send_notification" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getdatetime">
+      <soap12:operation soapAction="http://tempuri.org/getdatetime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AISCM">
+    <wsdl:port name="AISCMSoap" binding="tns:AISCMSoap">
+      <soap:address location="http://agc2017.azurewebsites.net/AISCM.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AISCMSoap12" binding="tns:AISCMSoap12">
+      <soap12:address location="http://agc2017.azurewebsites.net/AISCM.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

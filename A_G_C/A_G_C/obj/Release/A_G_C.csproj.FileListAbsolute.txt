@@ -1,0 +1,13 @@
+C:\Users\Aditya\Documents\Visual Studio 2017\Projects\A_G_C\A_G_C\bin\A_G_C.dll.config
+C:\Users\Aditya\Documents\Visual Studio 2017\Projects\A_G_C\A_G_C\bin\A_G_C.dll
+C:\Users\Aditya\Documents\Visual Studio 2017\Projects\A_G_C\A_G_C\bin\A_G_C.pdb
+C:\Users\Aditya\Documents\Visual Studio 2017\Projects\A_G_C\A_G_C\obj\Release\A_G_C.dll
+C:\Users\Aditya\Documents\Visual Studio 2017\Projects\A_G_C\A_G_C\obj\Release\A_G_C.pdb
+C:\Users\Aditya\Documents\Visual Studio 2017\Projects\A_G_C\A_G_C\obj\Release\A_G_C.csprojResolveAssemblyReference.cache
+C:\Users\Aditya\Documents\Visual Studio 2017\Projects\A_G_C\A_G_C\bin\Microsoft.Azure.NotificationHubs.dll
+C:\Users\Aditya\Documents\Visual Studio 2017\Projects\A_G_C\A_G_C\bin\Newtonsoft.Json.dll
+C:\Users\Aditya\Documents\Visual Studio 2017\Projects\A_G_C\A_G_C\bin\Microsoft.Azure.NotificationHubs.xml
+C:\Users\Aditya\Documents\Visual Studio 2017\Projects\A_G_C\A_G_C\bin\Newtonsoft.Json.xml
+C:\Users\Aditya\documents\visual studio 2017\Projects\A_G_C\A_G_C\bin\BogdanM.LocationServices.Core.dll
+C:\Users\Aditya\documents\visual studio 2017\Projects\A_G_C\A_G_C\bin\BogdanM.LocationServices.GoogleMaps.dll
+C:\Users\Aditya\documents\visual studio 2017\Projects\A_G_C\A_G_C\bin\GoogleMaps.LocationServices.dll

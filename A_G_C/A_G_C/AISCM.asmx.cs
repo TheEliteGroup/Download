@@ -19,27 +19,27 @@ using GoogleMaps.LocationServices;
 namespace A_G_C
 {
     /// <summary>
-    /// Summary description for AISCM
+    /// Summary description for DB nameCM
     /// </summary>
     [WebService(Namespace = "http://tempuri.org/")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
     // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
     // [System.Web.Script.Services.ScriptService]
-    public class AISCM : System.Web.Services.WebService
+    public class DB nameCM : System.Web.Services.WebService
     {
         string status = "";
-        public const string API_KEY = "AAAAAxli0a0:APA91bGgC-Grd7BtdvyMiOYNvpzj_SOnUIGayQbsxuavefb5gxGWmGiGKfEpiSe32njWUiwKUzAMU9LgK25wS3fbkGm__ruCjew197BX6Zfyr9gUKPc3VlJleeWXV9LdTOLCWmkMlsmi";
+        public const string API_KEY = "Enter your API Key";
         public string MESSAGE = "Hello, Xamarin!";
         [WebMethod]
         public string[] get_markets(string cropid)
         {
             string[] msg;
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "aais.database.windows.net";
-            builder.UserID = "aditya.sd15";
-            builder.Password = "Ganesh@123";
-            builder.InitialCatalog = "AIS";
+            builder.DataSource = "Data Source from Connection String";
+            builder.UserID = "User ID of the database";
+            builder.Password = "Password of the database";
+            builder.InitialCatalog = "DB name";
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             try
             {
@@ -77,10 +77,10 @@ namespace A_G_C
         {
             string[] msg;
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "aais.database.windows.net";
-            builder.UserID = "aditya.sd15";
-            builder.Password = "Ganesh@123";
-            builder.InitialCatalog = "AIS";
+            builder.DataSource = "Data Source from Connection String";
+            builder.UserID = "User ID of the database";
+            builder.Password = "Password of the database";
+            builder.InitialCatalog = "DB name";
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             try
             {
@@ -200,10 +200,10 @@ namespace A_G_C
         {
             int user_type = 0;
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "aais.database.windows.net";
-            builder.UserID = "aditya.sd15";
-            builder.Password = "Ganesh@123";
-            builder.InitialCatalog = "AIS";
+            builder.DataSource = "Data Source from Connection String";
+            builder.UserID = "User ID of the database";
+            builder.Password = "Password of the database";
+            builder.InitialCatalog = "DB name";
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             int profile_complete = 0;
             try
@@ -237,10 +237,10 @@ namespace A_G_C
         public void update_gcm_token(string email,string token)
         {
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "aais.database.windows.net";
-            builder.UserID = "aditya.sd15";
-            builder.Password = "Ganesh@123";
-            builder.InitialCatalog = "AIS";
+            builder.DataSource = "Data Source from Connection String";
+            builder.UserID = "User ID of the database";
+            builder.Password = "Password of the database";
+            builder.InitialCatalog = "DB name";
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             try
             {
@@ -260,10 +260,10 @@ namespace A_G_C
         public void add_token(string email,string token)
         {
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "aais.database.windows.net";
-            builder.UserID = "aditya.sd15";
-            builder.Password = "Ganesh@123";
-            builder.InitialCatalog = "AIS";
+            builder.DataSource = "Data Source from Connection String";
+            builder.UserID = "User ID of the database";
+            builder.Password = "Password of the database";
+            builder.InitialCatalog = "DB name";
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             try
             {
@@ -284,10 +284,10 @@ namespace A_G_C
         {
             int user_type = 0;
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "aais.database.windows.net";
-            builder.UserID = "aditya.sd15";
-            builder.Password = "Ganesh@123";
-            builder.InitialCatalog = "AIS";
+            builder.DataSource = "Data Source from Connection String";
+            builder.UserID = "User ID of the database";
+            builder.Password = "Password of the database";
+            builder.InitialCatalog = "DB name";
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             try
             {
@@ -321,10 +321,10 @@ namespace A_G_C
         public void add_farmer_details(string email,string address,string cnum,string ph,string region,string wth,string raspberry_id)
         {
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "aais.database.windows.net";
-            builder.UserID = "aditya.sd15";
-            builder.Password = "Ganesh@123";
-            builder.InitialCatalog = "AIS";
+            builder.DataSource = "Data Source from Connection String";
+            builder.UserID = "User ID of the database";
+            builder.Password = "Password of the database";
+            builder.InitialCatalog = "DB name";
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             try
             {
@@ -374,10 +374,10 @@ namespace A_G_C
         public void add_manufacturing_company_details(string email, string address, string cnum, string name, string region)
         {
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "aais.database.windows.net";
-            builder.UserID = "aditya.sd15";
-            builder.Password = "Ganesh@123";
-            builder.InitialCatalog = "AIS";
+            builder.DataSource = "Data Source from Connection String";
+            builder.UserID = "User ID of the database";
+            builder.Password = "Password of the database";
+            builder.InitialCatalog = "DB name";
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             try
             {
@@ -411,10 +411,10 @@ namespace A_G_C
         {
             string msg = "";
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "aais.database.windows.net";
-            builder.UserID = "aditya.sd15";
-            builder.Password = "Ganesh@123";
-            builder.InitialCatalog = "AIS";
+            builder.DataSource = "Data Source from Connection String";
+            builder.UserID = "User ID of the database";
+            builder.Password = "Password of the database";
+            builder.InitialCatalog = "DB name";
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             try
             {
@@ -435,10 +435,10 @@ namespace A_G_C
         {
             string msg = "";
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "aais.database.windows.net";
-            builder.UserID = "aditya.sd15";
-            builder.Password = "Ganesh@123";
-            builder.InitialCatalog = "AIS";
+            builder.DataSource = "Data Source from Connection String";
+            builder.UserID = "User ID of the database";
+            builder.Password = "Password of the database";
+            builder.InitialCatalog = "DB name";
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             try
             {
@@ -468,10 +468,10 @@ namespace A_G_C
         {
             string soilId = "";
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "aais.database.windows.net";
-            builder.UserID = "aditya.sd15";
-            builder.Password = "Ganesh@123";
-            builder.InitialCatalog = "AIS";
+            builder.DataSource = "Data Source from Connection String";
+            builder.UserID = "User ID of the database";
+            builder.Password = "Password of the database";
+            builder.InitialCatalog = "DB name";
             double soilphlow = 0.0;double soilphhigh = 0.0;double ph = Convert.ToDouble(p);
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             try
@@ -522,10 +522,10 @@ namespace A_G_C
             string districtid = "";
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
             string raspberry_id = "";
-            builder.DataSource = "aais.database.windows.net";
-            builder.UserID = "aditya.sd15";
-            builder.Password = "Ganesh@123";
-            builder.InitialCatalog = "AIS";
+            builder.DataSource = "Data Source from Connection String";
+            builder.UserID = "User ID of the database";
+            builder.Password = "Password of the database";
+            builder.InitialCatalog = "DB name";
             string soilid = "";
             int i = 0;
             DateTime dt = DateTime.Now;
@@ -588,10 +588,10 @@ namespace A_G_C
             string msg = "";
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
             string raspberry_id = "";
-            builder.DataSource = "aais.database.windows.net";
-            builder.UserID = "aditya.sd15";
-            builder.Password = "Ganesh@123";
-            builder.InitialCatalog = "AIS";
+            builder.DataSource = "Data Source from Connection String";
+            builder.UserID = "User ID of the database";
+            builder.Password = "Password of the database";
+            builder.InitialCatalog = "DB name";
             DateTime dtime = DateTime.Now;
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             string date = dtime.Date.ToString().Substring(0, 10);
@@ -632,10 +632,10 @@ namespace A_G_C
             string[] status ;
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
             string raspberry_id = "";
-            builder.DataSource = "aais.database.windows.net";
-            builder.UserID = "aditya.sd15";
-            builder.Password = "Ganesh@123";
-            builder.InitialCatalog = "AIS";
+            builder.DataSource = "Data Source from Connection String";
+            builder.UserID = "User ID of the database";
+            builder.Password = "Password of the database";
+            builder.InitialCatalog = "DB name";
             DateTime dtime = DateTime.Now;
             string date = dtime.Date.ToString().Substring(0, 10);
             string[] temp;
@@ -694,10 +694,10 @@ namespace A_G_C
         {
             string[] crops;
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "aais.database.windows.net";
-            builder.UserID = "aditya.sd15";
-            builder.Password = "Ganesh@123";
-            builder.InitialCatalog = "AIS";
+            builder.DataSource = "Data Source from Connection String";
+            builder.UserID = "User ID of the database";
+            builder.Password = "Password of the database";
+            builder.InitialCatalog = "DB name";
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             try
             {
@@ -725,10 +725,10 @@ namespace A_G_C
         public void add_appx_production(string email,string cropid,string appx_prod)
         {
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "aais.database.windows.net";
-            builder.UserID = "aditya.sd15";
-            builder.Password = "Ganesh@123";
-            builder.InitialCatalog = "AIS";
+            builder.DataSource = "Data Source from Connection String";
+            builder.UserID = "User ID of the database";
+            builder.Password = "Password of the database";
+            builder.InitialCatalog = "DB name";
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             try
             {
@@ -750,10 +750,10 @@ namespace A_G_C
         {
             string msg = "";
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "aais.database.windows.net";
-            builder.UserID = "aditya.sd15";
-            builder.Password = "Ganesh@123";
-            builder.InitialCatalog = "AIS";
+            builder.DataSource = "Data Source from Connection String";
+            builder.UserID = "User ID of the database";
+            builder.Password = "Password of the database";
+            builder.InitialCatalog = "DB name";
             DateTime dt = DateTime.Now;
             int year = dt.Year;
             int month = dt.Month;
@@ -807,10 +807,10 @@ namespace A_G_C
         {
             string[] bids;
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "aais.database.windows.net";
-            builder.UserID = "aditya.sd15";
-            builder.Password = "Ganesh@123";
-            builder.InitialCatalog = "AIS";
+            builder.DataSource = "Data Source from Connection String";
+            builder.UserID = "User ID of the database";
+            builder.Password = "Password of the database";
+            builder.InitialCatalog = "DB name";
             int districtid = 0;
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             try
@@ -849,10 +849,10 @@ namespace A_G_C
         {
             string[] bids;
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "aais.database.windows.net";
-            builder.UserID = "aditya.sd15";
-            builder.Password = "Ganesh@123";
-            builder.InitialCatalog = "AIS";
+            builder.DataSource = "Data Source from Connection String";
+            builder.UserID = "User ID of the database";
+            builder.Password = "Password of the database";
+            builder.InitialCatalog = "DB name";
             string districtid = "";
             DateTime date = DateTime.Now;
             SqlConnection con = new SqlConnection(builder.ConnectionString);
@@ -883,10 +883,10 @@ namespace A_G_C
         {
             string msg = "";
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "aais.database.windows.net";
-            builder.UserID = "aditya.sd15";
-            builder.Password = "Ganesh@123";
-            builder.InitialCatalog = "AIS";
+            builder.DataSource = "Data Source from Connection String";
+            builder.UserID = "User ID of the database";
+            builder.Password = "Password of the database";
+            builder.InitialCatalog = "DB name";
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             try
             {
@@ -925,10 +925,10 @@ namespace A_G_C
         {
             string[] biddetails = new string[2];
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "aais.database.windows.net";
-            builder.UserID = "aditya.sd15";
-            builder.Password = "Ganesh@123";
-            builder.InitialCatalog = "AIS";
+            builder.DataSource = "Data Source from Connection String";
+            builder.UserID = "User ID of the database";
+            builder.Password = "Password of the database";
+            builder.InitialCatalog = "DB name";
             string districtid = "";
             DateTime date = DateTime.Now;
             SqlConnection con = new SqlConnection(builder.ConnectionString);
@@ -990,10 +990,10 @@ namespace A_G_C
         {
             string[] biddetails=new string[2];
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "aais.database.windows.net";
-            builder.UserID = "aditya.sd15";
-            builder.Password = "Ganesh@123";
-            builder.InitialCatalog = "AIS";
+            builder.DataSource = "Data Source from Connection String";
+            builder.UserID = "User ID of the database";
+            builder.Password = "Password of the database";
+            builder.InitialCatalog = "DB name";
             string districtid = "";
             DateTime date = DateTime.Now;
             SqlConnection con = new SqlConnection(builder.ConnectionString);
@@ -1053,10 +1053,10 @@ namespace A_G_C
         {
             string[] bids;
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "aais.database.windows.net";
-            builder.UserID = "aditya.sd15";
-            builder.Password = "Ganesh@123";
-            builder.InitialCatalog = "AIS";
+            builder.DataSource = "Data Source from Connection String";
+            builder.UserID = "User ID of the database";
+            builder.Password = "Password of the database";
+            builder.InitialCatalog = "DB name";
             string districtid = "";
             DateTime date = DateTime.Now;
             SqlConnection con = new SqlConnection(builder.ConnectionString);
@@ -1092,10 +1092,10 @@ namespace A_G_C
         {
             string msg = "";
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "aais.database.windows.net";
-            builder.UserID = "aditya.sd15";
-            builder.Password = "Ganesh@123";
-            builder.InitialCatalog = "AIS";
+            builder.DataSource = "Data Source from Connection String";
+            builder.UserID = "User ID of the database";
+            builder.Password = "Password of the database";
+            builder.InitialCatalog = "DB name";
             string districtid="";
             DateTime date = DateTime.Now;
             SqlConnection con = new SqlConnection(builder.ConnectionString);
@@ -1162,10 +1162,10 @@ namespace A_G_C
         {
             string msg = "Off";
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "aais.database.windows.net";
-            builder.UserID = "aditya.sd15";
-            builder.Password = "Ganesh@123";
-            builder.InitialCatalog = "AIS";
+            builder.DataSource = "Data Source from Connection String";
+            builder.UserID = "User ID of the database";
+            builder.Password = "Password of the database";
+            builder.InitialCatalog = "DB name";
             DateTime dt = DateTime.Now;
             string time = dt.TimeOfDay.ToString().Substring(0, 5);
             string date = dt.Date.ToString().Substring(0, 10);
@@ -1212,10 +1212,10 @@ namespace A_G_C
         {
             string gcm_token = "";
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "aais.database.windows.net";
-            builder.UserID = "aditya.sd15";
-            builder.Password = "Ganesh@123";
-            builder.InitialCatalog = "AIS";
+            builder.DataSource = "Data Source from Connection String";
+            builder.UserID = "User ID of the database";
+            builder.Password = "Password of the database";
+            builder.InitialCatalog = "DB name";
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             try
             {
@@ -1266,10 +1266,10 @@ namespace A_G_C
             string gcm_token = "";
             MESSAGE = "Water pump is switched " + st;
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "aais.database.windows.net";
-            builder.UserID = "aditya.sd15";
-            builder.Password = "Ganesh@123";
-            builder.InitialCatalog = "AIS";
+            builder.DataSource = "Data Source from Connection String";
+            builder.UserID = "User ID of the database";
+            builder.Password = "Password of the database";
+            builder.InitialCatalog = "DB name";
             SqlConnection con = new SqlConnection(builder.ConnectionString);
             try
             {
